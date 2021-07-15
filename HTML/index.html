@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web Developer Bootcamp</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+    <form action="/otraPagina">
+        <p>
+            <label for="nombre">Ingresa tu usuario</label>
+            <input type="text" placeholder="username" id="nombre" name="username" required minlength="4">
+        </p>
+        <p> <label for="password">Ingresa tu contrase&ntilde;a</label>
+            <input type="password" placeholder="password" id="password" name="password" required minlength="8"></p>
+        <p> <label for="color">Elige un color</label>
+            <input type="color" id="color" name="color"></p>
+        <p> <label for="rango" name="rango">Elige el rango </label>
+            <input type="range" id="rango" min="0" max="100" step="10" value="50" name="rango"></p>
+        <p> <label for="check">Enviar promociones</label>
+            <input type="checkbox" id="check" name="checkbox"></p>
+        <button type="submit" value="Enviar">Enviar</button>
+    </form>
+    <hr>
+    <!--Outside the form-->
+    <h2 align="center">Usando buscadores</h2>
+    <h3>Buscando en Reddit</h3>
+    <form action="https://www.reddit.com/search/">
+        <label for="reddit"> Ingrese que quiere buscar en Reddit</label>
+        <input type="text" name="q" id="reddit">
+        <button>Search Reddit</button>
+    </form>
+    <hr>
+    <h3>Buscando en Google</h3>
+    <form
+        action=" https://www.google.com/search?q=web&sxsrf=ALeKk00OIy5q5FPF5F4vubq8l69XtWUUhg%3A1625191023125&ei=b3LeYIL9BvTT1sQPh9--yA4&o">
+        <label for="google"> Ingrese que quiere buscar en Google</label>
+        <input type="text" name="q" id="google">
+        <button>Search Google</button>
+    </form>
+    <hr>
+    <h3>Buscando en Youtube</h3>
+    <form action="https://www.youtube.com/results?">
+        <label for="yt"> Ingrese que quiere buscar en Youtube</label>
+        <input type="text" name="search_query" id="yt">
+        <button>Search Youtube</button>
+    </form>
+    <form action="/Ropa">
+        <p>
+            <caption>Talles:</caption>
+            <label for="xl">XL </label>
+            <input type="radio" id='xl' value='xl' name="Talle">
+
+            <label for="l">L </label>
+            <input type="radio" id=' l' value='l' name='Talle'>
+
+            <label for="m">M </label>
+            <input type="radio" id='m' value='m' name='Talle'>
+
+        </p>
+
+
+        <p>
+            <label for="selectColor">Elija de los colores disponibles </label>
+            <select name="color" id='selectColor'>
+                <option name="color" value="rojo">Rojo</option>
+                <option name="color" value="azul">Azul</option>
+                <option name="color" value="verde">Verde</option>
+
+
+
+            </select>
+        </p>
+        <p>
+            <label for="request">Any special requests? </label> <br>
+            <textarea id="request" rows="10" cols="50" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+
+    </form>
+
+    <form>
+        <label for="nombre">Ingresa tu usuario</label>
+        <input type="text" placeholder="username" id="nombre" name="username" required>
+        <button> Enviar </button>
+    </form>
+
+</body>
+
+</html>
