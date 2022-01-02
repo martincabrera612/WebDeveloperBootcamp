@@ -1,0 +1,14 @@
+img {
+    width: 30%;
+    margin: calc(10%/6); 
+
+}
+
+nav {
+    border-bottom: 2px solid rgb(105, 104, 104);
+    text-transform: uppercase;   
+    margin-left: calc(10%/6); 
+    padding: 1.2em 0;
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+}

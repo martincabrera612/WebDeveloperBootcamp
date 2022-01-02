@@ -1,0 +1,59 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Significa que cuadno la pantalla llegue a 800px
+va a hacer los cambios que aplique dentro de las llaves */
+
+/* @media (max-width: 800px) {
+    h1 {
+        color:purple;
+    }
+} */
+
+/* 
+Cuando llegue a 500 el h1 es rojo
+y cuando es 400 es azul */
+    @media (max-width: 500px) {
+        h1 {
+            color:red;
+
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        h1 {
+            color:blue;
+
+        }
+        
+    }
+
+
+    @media (orientation: landscape) {
+        body{
+            background-color: magenta;
+        }
+    }
+
+    @media(max-width: 768px) {
+        h1 {
+            font-size: 4em;
+        }
+    }
