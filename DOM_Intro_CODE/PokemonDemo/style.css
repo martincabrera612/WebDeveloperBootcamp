@@ -1,0 +1,15 @@
+.pokemon {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+
+}
+
+h1 {
+    color:rgb(16, 143, 143);
+    text-align: center;
+}
+
+img {
+    display: block;
+}
