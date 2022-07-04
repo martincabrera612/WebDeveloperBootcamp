@@ -5,40 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <section>
+    <section class="section">
         <div id="container">
-            <div id="image">
-                <!-- <img src="pingpong.avif"> -->
-                
-            </div>
-            <div id="title"> 
-                <h3>Ping Pong Score Keeper</h3>
-            </div>
-            <div>
-                <h1 id="h1Score" > <span id="p1Display"> 0 </span> to <span id="p2Display"> 0 </span> </h1>
-                <p>Use the buttons below to keep score</p>
-                <div id ="select">
-                    <label for="select">Playing To</label>
-                    <select id="select">
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                    </select>
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="pingpong.avif"> </figure>
+                        </div>
+                        <header class="card-header">
+                          <p class="card-header-title">
+                            Ping Pong Score Keeper
+                          </p>
+                          <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                          </button>
+                        </header>
+                        <div class="card-content">
+                          <div class="content">
+                            <h1 class="title is-1" id="h1Score" > <span id="p1Display"> 0 </span> to <span id="p2Display"> 0 </span> </h1>
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            <label class="label is-large is-inline" for="winSelect">Playing To</label>
+                            <div class="select is-rounded" id ="select">
+                                <select id="winSelect">
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <footer class="card-footer">
+                          <button class="button is-primary is-medium card-footer-item" id="btnP1">+1 Player One</button>
+                          <button class="button is-info is-medium card-footer-item"  id="btnP2">+1 Player Two</button>
+                          <button class="button is-danger is-medium card-footer-item" id="btnReset">Reset</button>
+                        </footer>
+                      </div>
                 </div>
-                <div id="buttons">
-                    <button id="btnP1">+1 Player One</button>
-                    <button id="btnP2">+1 Player Two</button>
-                    <button id="btnReset">Reset</button>
-                </div>
             </div>
+            
         </div>
     
 
