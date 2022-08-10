@@ -61,3 +61,27 @@ delayedColorChange('red', 1000)
     .then(() => delayedColorChange('blue', 1000))
     .then(() => delayedColorChange('indigo', 1000))
     .then(() => delayedColorChange('violet', 1000))
+
+
+const fakeRequest2 = (url) => {
+    return new Promise ((resolve, reject) => {
+        const rand = Math.random();
+        setTimeout(() => {
+            if (rand < 0.7) {
+            resolve('Tu informacion falsa esta aqui');
+            } else {
+                reject ("request error");
+            }
+        }, 2000)
+    })
+}
+
+fakeRequest2('/dogs/1') 
+    .then((data) => {
+        console.log ("Done with request");
+        console.log ('data is', data)
+    })
+    .catch ( (err) => {
+        console.log ("Oh no", err);
+    } )
+
