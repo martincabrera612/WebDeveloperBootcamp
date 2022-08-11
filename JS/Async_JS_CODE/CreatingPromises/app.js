@@ -68,9 +68,9 @@ const fakeRequest2 = (url) => {
         const rand = Math.random();
         setTimeout(() => {
             if (rand < 0.7) {
-            resolve('Tu informacion falsa esta aqui');
+            resolve('Tu informacion esta aqui');
             } else {
-                reject ("request error");
+                reject ("Request error");
             }
         }, 2000)
     })
